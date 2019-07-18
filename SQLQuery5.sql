@@ -1,0 +1,1 @@
+﻿UPDATE LibraryAssets SET DeweyIndex = 823.555 WHERE Title = 'emma'
