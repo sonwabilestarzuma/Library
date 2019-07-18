@@ -13,7 +13,7 @@ namespace LibraryData.Models
         public decimal Fees { get; set; }
 
         [Display(Name = "Card Issued Date")]
-        DateTime Created { get; set; }
+        public DateTime Created { get; set; }
 
         [Display(Name = "Materials on Loan")]
         public virtual IEnumerable<Checkout> Checkouts { get; set; }

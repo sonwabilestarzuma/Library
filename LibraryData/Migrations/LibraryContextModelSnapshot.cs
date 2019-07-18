@@ -175,6 +175,8 @@ namespace LibraryData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("Created");
+
                     b.Property<decimal>("Fees");
 
                     b.HasKey("Id");

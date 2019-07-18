@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryData.Migrations
 {
     [DbContext(typeof(LibraryContext))]
-    [Migration("20190718114355_Add Intial Entity Models")]
+    [Migration("20190718171935_Add Intial Entity Models")]
     partial class AddIntialEntityModels
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -176,6 +176,8 @@ namespace LibraryData.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created");
 
                     b.Property<decimal>("Fees");
 
